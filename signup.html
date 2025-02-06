@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Signup</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -14,9 +15,37 @@
 				<form class="login-form">
 					<h2>Signup</h2>
 
-					<div class="form-input-field">
-						<label for="studentID">Student ID:</label>
-						<input type="text" placeholder="Enter your studentID" />
+					<div class="input-group">
+						<label class="input-group-text" for="studentID">Student ID:</label>
+						<input type="text" class="form-control" id="studentID" />
+					</div>
+
+					<div class="input-group">
+						<label class="input-group-text">First & Last name:</label>
+						<input type="text" class="form-control" aria-label="First name" />
+						<input type="text" class="form-control" aria-label="Last name" />
+					</div>
+
+					<div class="input-group">
+						<label class="input-group-text" for="username">Username:</label>
+						<input type="text" class="form-control" id="username" />
+					</div>
+
+					<div class="input-group">
+						<label class="input-group-text" for="password">Password:</label>
+						<input type="password" class="form-control" id="password" />
+					</div>
+
+					<div class="input-group">
+						<label class="input-group-text" for="confirmPassword"
+							>Confirm:</label
+						>
+						<input type="password" class="form-control" id="confirmPassword" />
+					</div>
+
+					<!-- <div class="form-input-field">
+						<label for="studentID">Confirm:</label>
+						<input type="password" placeholder="Enter your studentID" />
 					</div>
 
 					<div class="user-fullname-container">
@@ -44,14 +73,14 @@
 					<div class="form-input-field">
 						<label for="confirmPassword">Confirm Password:</label>
 						<input type="password" placeholder="Re-enter your password" />
-					</div>
+					</div> -->
 
 					<p class="form-signup">
 						Already have an account? <a href="/login.html">Login</a>
 					</p>
 
 					<div class="form-actions">
-						<button type="submit">Signup</button>
+						<button class="btn btn-primary" type="submit">Signup</button>
 					</div>
 				</form>
 			</div>

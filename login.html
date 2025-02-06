@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -14,25 +15,41 @@
 				<form class="login-form">
 					<h2>Login</h2>
 
-					<div class="form-input-field">
+					<!-- <div class="form-input-field">
 						<label for="username">Username:</label>
 						<input type="text" placeholder="Enter your username" />
+					</div> -->
+
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">@</span>
+						<input type="text" class="form-control" placeholder="Username" />
 					</div>
 
-					<div class="form-input-field">
+					<div class="input-group">
+						<span class="input-group-text" id="basic-addon1">Password</span>
+						<input
+							type="password"
+							class="form-control"
+							placeholder="Password"
+						/>
+					</div>
+
+					<!-- <div class="form-input-field">
 						<label for="password">Password:</label>
 						<input type="password" placeholder="Enter your password" />
+					</div> -->
+
+					<div>
+						<p class="form-signup">
+							Don&apos;t have an account? <a href="/signup.html">Signup</a>
+						</p>
+						<p class="form-signup">
+							Forgot password? <a href="/forgot-password.html">Click here</a>
+						</p>
 					</div>
 
-					<p class="form-signup">
-						Don&apos;t have an account? <a href="/signup.html">Signup</a>
-					</p>
-					<p class="form-signup">
-						Forgot password? <a href="/forgot-password.html">Click here</a>
-					</p>
-
 					<div class="form-actions">
-						<button type="submit">Login</button>
+						<button class="btn btn-primary" type="submit">Login</button>
 					</div>
 				</form>
 			</div>

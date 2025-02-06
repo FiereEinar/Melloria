@@ -5,8 +5,8 @@
 }
 
 img {
-	width: 10rem;
-	height: 10rem;
+	width: 8rem;
+	height: 8rem;
 }
 
 h2 {
@@ -55,7 +55,8 @@ body {
 }
 
 .container {
-	width: 500px;
+	display: flex;
+	justify-content: center;
 }
 
 .card {
@@ -69,6 +70,7 @@ body {
 	border-radius: 5px;
 	padding: 1rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 500px;
 }
 
 .form-actions {

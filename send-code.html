@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -12,16 +13,21 @@
 				<img src="images/BUKSU_LOGO.png" alt="logo" />
 
 				<form action="new-password.html" class="login-form">
-					<!-- <h2>Enter code</h2> -->
+					<h2>Enter code</h2>
 
-					<div class="form-input-field">
-						<label for="number">Enter code:</label>
-						<input type="number" placeholder="Enter the code" />
+					<div class="input-group">
+						<label class="input-group-text" for="code">Code:</label>
+						<input type="text" class="form-control" id="code" />
+						<button
+							class="btn btn-outline-primary"
+							type="submit"
+							id="button-addon2"
+						>
+							Send code
+						</button>
 					</div>
 
-					<div class="form-actions">
-						<button type="submit">Send code</button>
-					</div>
+					<div class="form-actions"></div>
 				</form>
 			</div>
 		</div>
