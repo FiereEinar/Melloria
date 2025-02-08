@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Accounts</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/accounts.css" />
 		<link rel="icon" type="image/png" href="../images/BUKSU_LOGO.png" />
 		<link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css" />
 	</head>
@@ -13,7 +14,6 @@
 			<!-- Sidebar -->
 			<div class="sidebar">
 				<div class="heads">
-					<p>DASHBOARD</p>
 					<img class="logo" src="../images/BUKSU_LOGO.png" alt="" />
 				</div>
 				<ul class="menu">
@@ -113,8 +113,78 @@
 				</div>
 
 				<div class="content">
-					<h2>Hello and Welcome to the Accounts!</h2>
-					<p>This is the content area</p>
+					<div class="accounts-page">
+						<h3>Accounts Management</h3>
+						<div class="accounts-header">
+							<button class="btn btn-primary">Add</button>
+							<input
+								type="text"
+								class="form-control search-bar"
+								placeholder="Search accounts..."
+							/>
+						</div>
+
+						<table class="accounts-table">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Email</th>
+									<th>Role</th>
+									<th>Status</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>001</td>
+									<td>Nick Xylan Melloria</td>
+									<td>nick@gmail.com</td>
+									<td>Admin</td>
+									<td><span class="status active">Active</span></td>
+									<td>
+										<button class="btn btn-sm btn-edit">Edit</button>
+										<button class="btn btn-sm btn-delete">Delete</button>
+									</td>
+								</tr>
+								<tr>
+									<td>002</td>
+									<td>Zoid Balba</td>
+									<td>zoidy@gmail.com</td>
+									<td>User</td>
+									<td><span class="status inactive">Inactive</span></td>
+									<td>
+										<button class="btn btn-sm btn-edit">Edit</button>
+										<button class="btn btn-sm btn-delete">Delete</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td>003</td>
+									<td>Kent Seridon</td>
+									<td>kenty@gmail.com</td>
+									<td>User</td>
+									<td><span class="status active">Active</span></td>
+									<td>
+										<button class="btn btn-sm btn-edit">Edit</button>
+										<button class="btn btn-sm btn-delete">Delete</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td>004</td>
+									<td>James Lopez</td>
+									<td>jamesbayot@gmail.com</td>
+									<td>User</td>
+									<td><span class="status active">Active</span></td>
+									<td>
+										<button class="btn btn-sm btn-edit">Edit</button>
+										<button class="btn btn-sm btn-delete">Delete</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>

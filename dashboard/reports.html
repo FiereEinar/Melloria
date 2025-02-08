@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Reports</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/reports.css" />
+		<link rel="stylesheet" href="styles/dashboard.css" />
 		<link rel="icon" type="image/png" href="../images/BUKSU_LOGO.png" />
 		<link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css" />
 	</head>
@@ -13,7 +15,6 @@
 			<!-- Sidebar -->
 			<div class="sidebar">
 				<div class="heads">
-					<p>DASHBOARD</p>
 					<img class="logo" src="../images/BUKSU_LOGO.png" alt="" />
 				</div>
 				<ul class="menu">
@@ -112,8 +113,102 @@
 					</div>
 				</div>
 
+				<!-- Main Content -->
 				<div class="content">
-					<table></table>
+					<div class="reports-page">
+						<h3>Reports</h3>
+
+						<div class="reports-controls">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Search reports..."
+							/>
+							<select class="form-control">
+								<option value="all">All Reports</option>
+								<option value="sales">Sales</option>
+								<option value="inventory">Inventory</option>
+								<option value="performance">Performance</option>
+							</select>
+						</div>
+
+						<table class="reports-table">
+							<thead>
+								<tr>
+									<th>Report Name</th>
+									<th>Category</th>
+									<th>Date</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Monthly Sales Report</td>
+									<td>Sales</td>
+									<td>2024-07-10</td>
+									<td>
+										<button class="view-btn">View</button>
+										<button class="download-btn">Download</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Inventory Status</td>
+									<td>Inventory</td>
+									<td>2024-07-12</td>
+									<td>
+										<button class="view-btn">View</button>
+										<button class="download-btn">Download</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- Recent Sales Table -->
+						<div class="sales-table">
+							<h3>Recent Sales</h3>
+							<table>
+								<thead>
+									<tr>
+										<th>Customer</th>
+										<th>Product</th>
+										<th>Quantity</th>
+										<th>Price</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nick Melloria</td>
+										<td>Honda CBR1000RR-R Fireblade SP</td>
+										<td>1</td>
+										<td>P1,699,000.00</td>
+										<td>2025-02-08</td>
+									</tr>
+									<tr>
+										<td>Zoid Balba</td>
+										<td>Ducati Panigale V4S</td>
+										<td>1</td>
+										<td>P1,990,000.00</td>
+										<td>2025-02-07</td>
+									</tr>
+									<tr>
+										<td>Kent Seridon</td>
+										<td>BMW R1250 GS</td>
+										<td>1</td>
+										<td>P1,495,000.00</td>
+										<td>2025-02-06</td>
+									</tr>
+									<tr>
+										<td>James Lopez</td>
+										<td>KTM Superduke 1290 R</td>
+										<td>1</td>
+										<td>P1,250,000.00</td>
+										<td>2025-02-05</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

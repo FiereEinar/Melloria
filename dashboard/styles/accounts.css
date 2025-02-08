@@ -1,0 +1,67 @@
+/* .accounts-page {
+	padding: 20px;
+} */
+
+.accounts-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.search-bar {
+	width: 250px;
+}
+
+.accounts-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.accounts-table th,
+.accounts-table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.accounts-table th {
+	background: #f4f4f4;
+}
+
+.status {
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.status.active {
+	background: #c8e6c9;
+	color: #2e7d32;
+}
+
+.status.inactive {
+	background: #ffcdd2;
+	color: #c62828;
+}
+
+.btn {
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.btn-edit {
+	background: #ffeb3b;
+	color: #000;
+}
+
+.btn-delete {
+	background: #e57373;
+	color: white;
+}

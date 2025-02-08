@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dashboard</title>
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/dashboard.css" />
 		<link rel="icon" type="image/png" href="../images/BUKSU_LOGO.png" />
 		<link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css" />
 	</head>
@@ -13,7 +14,6 @@
 			<!-- Sidebar -->
 			<div class="sidebar">
 				<div class="heads">
-					<p>DASHBOARD</p>
 					<img class="logo" src="../images/BUKSU_LOGO.png" alt="" />
 				</div>
 				<ul class="menu">
@@ -116,8 +116,87 @@
 
 				<!-- Main content -->
 				<div class="content">
-					<h2>Hello and Welcome to the Dashboard!</h2>
-					<p>This is the content area</p>
+					<h2 class="dashboard-title">Dashboard</h2>
+
+					<!-- Stats Cards -->
+					<div class="stats-container">
+						<div class="stat-card">
+							<h3>Total Sales</h3>
+							<p>P5,258,890</p>
+						</div>
+						<div class="stat-card">
+							<h3>Total Customers</h3>
+							<p>4</p>
+						</div>
+						<div class="stat-card">
+							<h3>Products Sold</h3>
+							<p>4</p>
+						</div>
+						<div class="stat-card">
+							<h3>Revenue</h3>
+							<p>P6,434,000</p>
+						</div>
+					</div>
+
+					<!-- Recent Sales Table -->
+					<div class="sales-table">
+						<h3>Recent Sales</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Customer</th>
+									<th>Product</th>
+									<th>Quantity</th>
+									<th>Price</th>
+									<th>Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Nick Melloria</td>
+									<td>Honda CBR1000RR-R Fireblade SP</td>
+									<td>1</td>
+									<td>P1,699,000.00</td>
+									<td>2025-02-08</td>
+								</tr>
+								<tr>
+									<td>Zoid Balba</td>
+									<td>Ducati Panigale V4S</td>
+									<td>1</td>
+									<td>P1,990,000.00</td>
+									<td>2025-02-07</td>
+								</tr>
+								<tr>
+									<td>Kent Seridon</td>
+									<td>BMW R1250 GS</td>
+									<td>1</td>
+									<td>P1,495,000.00</td>
+									<td>2025-02-06</td>
+								</tr>
+								<tr>
+									<td>James Lopez</td>
+									<td>KTM Superduke 1290 R</td>
+									<td>1</td>
+									<td>P1,250,000.00</td>
+									<td>2025-02-05</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- Sales Overview Chart (Simple Bars) -->
+					<div class="sales-chart">
+						<h3>Sales Overview</h3>
+						<div class="chart">
+							<div class="bar" style="height: 70%">Mon</div>
+							<div class="bar" style="height: 80%">Tue</div>
+							<div class="bar" style="height: 60%">Wed</div>
+							<div class="bar" style="height: 90%">Thu</div>
+							<div class="bar" style="height: 50%">Fri</div>
+							<div class="bar" style="height: 40%">Sat</div>
+							<div class="bar" style="height: 75%">Sun</div>
+						</div>
+					</div>
 				</div>
 				<!-- End of Main Content -->
 			</div>
