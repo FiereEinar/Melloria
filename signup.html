@@ -15,69 +15,63 @@
 				<form class="login-form">
 					<h2>Signup</h2>
 
-					<div class="input-group">
-						<label class="input-group-text" for="studentID">Student ID:</label>
-						<input type="text" class="form-control" id="studentID" />
-					</div>
+					<input
+						type="text"
+						class="form-control"
+						id="studentID"
+						placeholder="Student ID:"
+					/>
 
-					<div class="input-group">
+					<!-- <div class="input-group">
 						<label class="input-group-text">First & Last name:</label>
 						<input type="text" class="form-control" aria-label="First name" />
 						<input type="text" class="form-control" aria-label="Last name" />
-					</div>
-
-					<div class="input-group">
-						<label class="input-group-text" for="username">Username:</label>
-						<input type="text" class="form-control" id="username" />
-					</div>
-
-					<div class="input-group">
-						<label class="input-group-text" for="password">Password:</label>
-						<input type="password" class="form-control" id="password" />
-					</div>
-
-					<div class="input-group">
-						<label class="input-group-text" for="confirmPassword"
-							>Confirm:</label
-						>
-						<input type="password" class="form-control" id="confirmPassword" />
-					</div>
-
-					<!-- <div class="form-input-field">
-						<label for="studentID">Confirm:</label>
-						<input type="password" placeholder="Enter your studentID" />
-					</div>
-
-					<div class="user-fullname-container">
-						<div class="form-input-field">
-							<label for="firstname">firstname:</label>
-							<input type="text" placeholder="Enter your firstname" />
-						</div>
-
-						<div class="form-input-field">
-							<label for="lastname">lastname:</label>
-							<input type="text" placeholder="Enter your lastname" />
-						</div>
-					</div>
-
-					<div class="form-input-field">
-						<label for="username">Username:</label>
-						<input type="text" placeholder="Enter your username" />
-					</div>
-
-					<div class="form-input-field">
-						<label for="password">Password:</label>
-						<input type="password" placeholder="Enter your password" />
-					</div>
-
-					<div class="form-input-field">
-						<label for="confirmPassword">Confirm Password:</label>
-						<input type="password" placeholder="Re-enter your password" />
 					</div> -->
+					<div class="row">
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								aria-label="First name"
+								placeholder="First name"
+							/>
+						</div>
+						<div class="col">
+							<input
+								type="text"
+								class="form-control"
+								aria-label="Last name"
+								placeholder="Last name"
+							/>
+						</div>
+					</div>
 
-					<p class="form-signup">
-						Already have an account? <a href="/login.html">Login</a>
-					</p>
+					<input
+						type="text"
+						class="form-control"
+						id="username"
+						placeholder="Username:"
+					/>
+
+					<input
+						type="password"
+						class="form-control"
+						id="password"
+						placeholder="Password:"
+					/>
+
+					<input
+						type="password"
+						class="form-control"
+						id="confirmPassword"
+						placeholder="Confirm:"
+					/>
+
+					<div class="form-questions">
+						<span class="form-signup">
+							Already have an account? <a href="/login.html">Login</a>
+						</span>
+					</div>
 
 					<div class="form-actions">
 						<button class="btn btn-primary" type="submit">Signup</button>
