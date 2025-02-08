@@ -1,3 +1,5 @@
+@import './variables.css';
+
 /* .content {
 	padding: 20px;
 	font-family: Arial, sans-serif;
@@ -18,11 +20,13 @@
 }
 
 .stat-card {
-	background: #3498db;
+	border: 1px solid var(--dark-400);
+	background: var(--dark-100);
 	color: white;
 	padding: 15px;
 	border-radius: 8px;
 	flex: 1;
+	color: var(--dark-500);
 	text-align: center;
 }
 
@@ -33,7 +37,9 @@
 
 /* Sales Table */
 .sales-table {
-	background: white;
+	background: var(--dark-100);
+	border: 1px solid var(--dark-400);
+	color: var(--dark-500);
 	padding: 15px;
 	border-radius: 8px;
 	margin-bottom: 20px;
@@ -55,12 +61,13 @@ td {
 }
 
 th {
-	background: #f4f4f4;
+	background: var(--dark-100);
 }
 
 /* Sales Chart */
 .sales-chart {
-	background: white;
+	background: var(--dark-100);
+	border: 1px solid var(--dark-400);
 	padding: 15px;
 	border-radius: 8px;
 }
@@ -71,7 +78,7 @@ th {
 	justify-content: space-around;
 	align-items: flex-end;
 	height: 150px;
-	background: #f4f4f4;
+	background: var(--dark-100);
 	padding: 10px;
 }
 

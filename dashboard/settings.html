@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Settings</title>
 		<link rel="stylesheet" href="styles/styles.css" />
-		<link rel="icon" type="image/png" href="../images/BUKSU_LOGO.png" />
+		<link rel="icon" type="image/png" href="../images/logo.jpg" />
 		<link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="styles/settings.css" />
 	</head>
 	<body>
 		<div class="dashboard">
@@ -111,9 +112,51 @@
 					</div>
 				</div>
 
+				<!-- Main Content -->
 				<div class="content">
-					<h2>Hello and Welcome to the Settings!</h2>
-					<p>This is the content area</p>
+					<h2 class="settings-title">Settings</h2>
+
+					<!-- Account Settings -->
+					<div class="settings-section">
+						<h3>Account Settings</h3>
+						<label for="username">Username</label>
+						<input type="text" id="username" value="NickMelloria" />
+
+						<label for="email">Email</label>
+						<input type="email" id="email" value="nick@example.com" />
+
+						<label for="password">New Password</label>
+						<input
+							type="password"
+							id="password"
+							placeholder="Enter new password"
+						/>
+					</div>
+
+					<!-- Appearance Settings -->
+					<div class="settings-section">
+						<h3>Appearance</h3>
+						<label class="toggle-label">
+							Dark Mode
+							<input type="checkbox" id="dark-mode-toggle" />
+							<span class="slider"></span>
+						</label>
+					</div>
+
+					<!-- Notification Settings -->
+					<div class="settings-section">
+						<h3>Notifications</h3>
+						<label>
+							<input type="checkbox" checked /> Email Notifications
+						</label>
+						<label> <input type="checkbox" /> SMS Notifications </label>
+					</div>
+
+					<!-- Buttons -->
+					<div class="settings-buttons">
+						<button class="save-btn">Save Changes</button>
+						<button class="reset-btn">Reset</button>
+					</div>
 				</div>
 			</div>
 		</div>

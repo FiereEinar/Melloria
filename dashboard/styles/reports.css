@@ -17,22 +17,31 @@
 
 .reports-controls .form-control {
 	width: 48%;
+	color: var(--dark-500);
+	border: 1px solid var(--dark-400);
+	background-color: var(--dark-200);
+}
+
+.reports-controls .form-control::placeholder {
+	color: var(--dark-500);
 }
 
 .reports-table {
 	width: 100%;
 	border-collapse: collapse;
+	color: var(--dark-500);
 }
 
 .reports-table th,
 .reports-table td {
-	border: 1px solid #ddd;
+	background-color: var(--dark-100);
+	border: 1px solid var(--dark-400);
 	padding: 10px;
 	text-align: left;
 }
 
 .reports-table th {
-	background: #f4f4f4;
+	background-color: var(--dark-100);
 }
 
 .view-btn,
@@ -58,4 +67,14 @@
 
 .download-btn:hover {
 	background: #218838;
+}
+
+.sales-table {
+	margin-top: 1rem;
+}
+
+.sales-table th,
+.sales-table td {
+	background-color: var(--dark-100);
+	border: 1px solid var(--dark-400);
 }

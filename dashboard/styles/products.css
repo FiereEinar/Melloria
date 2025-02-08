@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .products-content {
 	display: flex;
 	flex-direction: column;
@@ -17,9 +19,23 @@
 
 .card {
 	width: 15rem;
-	height: 10rem;
 	display: flex;
-	flex-direction: column;
+	overflow: visible;
+	/* border-radius: 0px; */
+	/* border: none; */
+	outline: none;
+	border: none;
+	background-color: var(--dark);
+	color: var(--dark-500);
+	border: 2px solid var(--dark-300);
+}
+
+.card-title {
+	color: white;
+}
+
+.card .card-body {
+	overflow: visible;
 }
 
 .content .card img {
