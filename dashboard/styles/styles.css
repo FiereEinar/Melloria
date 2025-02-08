@@ -114,11 +114,21 @@ img {
 	gap: 8px;
 }
 
-/* .search input {
+.search {
+	display: flex;
+	align-items: center;
+}
+
+.search > div {
+	background-color: white;
 	padding: 5px;
 	border-radius: 5px;
-	border: 1px solid #afadad;
-} */
+}
+
+.search img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
 
 .user-profile > img {
 	width: 2.5rem;
