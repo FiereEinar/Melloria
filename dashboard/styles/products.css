@@ -1,0 +1,41 @@
+.products-content {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	gap: 1rem;
+}
+
+.featured,
+.products {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); */
+	gap: 1rem;
+}
+
+.card {
+	width: 15rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.content .card img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+.carousel {
+	/* width: 800px; */
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel img {
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+	/* height: 600px; */
+}

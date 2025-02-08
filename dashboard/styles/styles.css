@@ -86,8 +86,10 @@ img {
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
-	/* font-weight: 600; */
-	/* font-size: 25px; */
+}
+
+.heads .logo {
+	border-radius: 50%;
 }
 
 /* Main Content */
@@ -127,27 +129,4 @@ img {
 .content {
 	padding: 1rem;
 	overflow-y: scroll;
-}
-
-.featured,
-.products {
-	margin-bottom: 1rem;
-	display: flex;
-	flex-wrap: wrap;
-	/* display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); */
-	gap: 1rem;
-}
-
-.card {
-	width: 15rem;
-	height: 10rem;
-	display: flex;
-	flex-direction: column;
-}
-
-.content .card img {
-	width: 100%;
-	height: 150px;
-	object-fit: cover;
 }
