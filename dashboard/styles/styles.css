@@ -118,11 +118,14 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
+	gap: 12px;
+	color: white;
 }
 
 .heads .logo {
 	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
 }
 
 /* Main Content */

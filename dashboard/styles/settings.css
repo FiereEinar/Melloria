@@ -33,9 +33,9 @@ label {
 	font-weight: bold;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'] {
+.content input[type='text'],
+.content input[type='email'],
+.content input[type='password'] {
 	width: 100%;
 	padding: 8px;
 	border-radius: 5px;
