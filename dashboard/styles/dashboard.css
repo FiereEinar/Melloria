@@ -20,7 +20,7 @@
 }
 
 .stat-card {
-	border: 1px solid var(--dark-400);
+	/* border: 1px solid var(--dark-400); */
 	background: var(--dark-100);
 	color: white;
 	padding: 15px;
@@ -38,7 +38,7 @@
 /* Sales Table */
 .sales-table {
 	background: var(--dark-100);
-	border: 1px solid var(--dark-400);
+	/* border: 1px solid var(--dark-400); */
 	color: var(--dark-500);
 	padding: 15px;
 	border-radius: 8px;
@@ -67,7 +67,7 @@ th {
 /* Sales Chart */
 .sales-chart {
 	background: var(--dark-100);
-	border: 1px solid var(--dark-400);
+	/* border: 1px solid var(--dark-400); */
 	padding: 15px;
 	border-radius: 8px;
 }
