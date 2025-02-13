@@ -82,7 +82,8 @@ img {
 	list-style: none;
 }
 
-.menu > li > a {
+.menu > li > a,
+.sidebar a {
 	color: black;
 	display: flex;
 	align-items: center;
@@ -93,24 +94,29 @@ img {
 	text-decoration: none;
 }
 
-.menu > li svg {
+.sidebar svg {
 	transition: all 300ms ease;
 }
 
-.menu > li > a:hover {
+.sidebar a:hover {
 	color: #1e90ff;
 }
 
-.menu > li > a:hover svg {
+.sidebar a:hover svg {
 	fill: #1e90ff;
 }
 
-.menu > li .active svg {
+.sidebar .active svg {
 	fill: #1e90ff;
 }
 
-.menu > li > a.active {
+.sidebar a.active {
 	color: dodgerblue;
+}
+
+.sidebar-bottom-portion {
+	/* height: 100%; */
+	margin-top: auto;
 }
 
 .sidebar .heads {
