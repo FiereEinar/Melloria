@@ -107,3 +107,19 @@
 .accounts-card p {
 	color: var(--dark-500);
 }
+
+.add-and-user-table-container {
+	display: flex;
+	align-items: start;
+	gap: 1rem;
+}
+
+.add-and-user-table-container > div {
+	flex-shrink: 1;
+}
+
+.add-user-form-container {
+	color: white;
+	border: 1px solid var(--dark-400);
+	background-color: var(--dark-200);
+}
