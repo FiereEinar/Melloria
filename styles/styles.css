@@ -112,3 +112,8 @@ button {
 	/* flex-wrap: wrap; */
 	gap: 1rem;
 }
+
+.error-text {
+	color: red;
+	font-size: small;
+}

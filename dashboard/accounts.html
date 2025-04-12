@@ -308,19 +308,18 @@
 		<script>
 			let usersID = [];
 
-			function deleteUser(userID) {
-				// let value = $(this).val().toLowerCase();
-				// let value = $(this).val().toLowerCase();
-				$('#userTableBody tr').map(function () {
-					console.log('current ID: ', $('#studentID').text());
-					if ($('#studentID').text() === userID.toString()) {
-						console.log('found');
-						$(this).remove();
-					} else {
-						console.log('not found');
-					}
-				});
-			}
+			// function deleteUser(userID) {
+			// 	// let value = $(this).val().toLowerCase();
+			// 	// let value = $(this).val().toLowerCase();
+			// 	$('#userTableBody tr').map(function () {
+			// 		console.log('current ID: ', $('#studentID').text());
+			// 		if ($('#studentID').text() === userID.toString()) {
+			// 			$(this).remove();
+			// 		} else {
+			// 			console.log('not found');
+			// 		}
+			// 	});
+			// }
 
 			function addUser() {
 				let stud_id = $('#stud_id').val();
@@ -331,10 +330,11 @@
 				let address = $('#address').val();
 
 				// check if student ID already exists
-				if (usersID.find((userID) => userID === stud_id)) {
+				if (usersID.find((userID) => userID === stud_id.toString())) {
 					$('#liveAlert').html(
 						'<div class="alert alert-danger">Student ID already exists</div>'
 					);
+					return;
 				}
 
 				// check if any field is empty
@@ -424,6 +424,7 @@
 					(userID) =>
 						userID !== $(this).closest('tr').children('td.stud_id').text()
 				);
+
 				$(this).closest('tr').remove();
 			});
 
