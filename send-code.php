@@ -1,3 +1,42 @@
+<?php
+
+session_start();
+require "includes/db.php";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	$code = $_POST['code'];
+	$email = $_SESSION['email'];
+
+	if (!isset($email)) {
+		$_SESSION['error'] = 'No email found.';
+		header('Location: forgot-password.php');
+		exit();
+	}
+
+	$stmt = $pdo->prepare('SELECT reset_code FROM users WHERE email = ?');
+	$stmt->execute([$email]);
+	$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+	if ($user) {
+		if ($code === $user['reset_code'])  {
+			$_SESSION['reset_email'] = $email;
+			$_SESSION['reset_code_verified'] = true;
+			header('Location: new-password.php');
+			exit();
+		} else {
+			$_SESSION['error'] = 'Invalid code.';
+			header('Location: forgot-password.php');
+			exit();
+		}
+	} else {
+		$_SESSION['error'] = 'No user found with that email.';
+		header('Location: forgot-password.php');
+		exit();
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +53,7 @@
     <div class="card">
       <img src="images/BUKSU_LOGO.png" alt="logo" />
 
-      <form action="new-password.html" class="login-form">
+      <form action="send-code.php" method="POST" class="login-form">
         <h2>Enter code</h2>
 
         <?php if (isset($_SESSION['success'])): ?>
@@ -29,7 +68,7 @@
 
         <div class="input-group">
           <label class="input-group-text" for="code">Code:</label>
-          <input type="text" class="form-control" id="code" />
+          <input name="code" type="text" class="form-control" id="code" />
           <button class="btn btn-outline-primary" type="submit" id="button-addon2">
             Send code
           </button>
