@@ -31,7 +31,7 @@ session_start();
           <span class="form-signup">
             Don&apos;t have an account? <a href="/Melloria/signup.php">Signup</a>
           </span>
-          <a href="/forgot-password.html">Forgot password?</a>
+          <a href="/Melloria/forgot-password.php">Forgot password?</a>
         </div>
 
         <?php if (isset($_SESSION['error'])): ?>
