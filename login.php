@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+require_once __DIR__ . "/vendor/autoload.php";
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$siteKey = $_ENV['RECAPTCHA_SITE_KEY'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,6 +35,10 @@ session_start();
 
         <input type="password" class="form-control" name="password" placeholder="Password" />
 
+        <div class="">
+          <div class="g-recaptcha" data-sitekey="<?= htmlspecialchars($siteKey) ?>"></div>
+        </div>
+
         <div class="form-questions">
           <span class="form-signup">
             Don&apos;t have an account? <a href="/Melloria/signup.php">Signup</a>
@@ -45,6 +57,8 @@ session_start();
       </form>
     </div>
   </div>
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>
